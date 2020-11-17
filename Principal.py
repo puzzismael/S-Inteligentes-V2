@@ -69,7 +69,7 @@ def grafo(tabla_nodos,ways):
                 i=i+1
     return G
 
-def BusquedaBasica(problema, estrategia, maxProf,grafo):
+def BUSQUEDABASICA(problema, estrategia, maxProf,grafo):
     frontera=Frontera()
     problema.tabla.clear()
     n_inicial=nodoBusqueda(0, None, problema.estadoInicial, 0,None,0,0)
@@ -94,7 +94,7 @@ def BusquedaBasica(problema, estrategia, maxProf,grafo):
         return None
 
 
-def BusquedaIncremental(problema, estrategia, maxProf, incProf,grafo):
+def BUSQUEDAINCREMENTAL(problema, estrategia, maxProf, incProf,grafo):
     profActual = incProf
     solucion=None
 
@@ -104,7 +104,7 @@ def BusquedaIncremental(problema, estrategia, maxProf, incProf,grafo):
 
     return solucion
 
-def crearProblema(nodoInicial,Nodos):
+def CREARPROBLEMA(nodoInicial,Nodos):
     estado = Estado(nodoInicial,Nodos,grafo.node[nodoInicial]['lat'],grafo.node[nodoInicial]['lon'])
     problema = Problema(espacioEstados, estado)
 
