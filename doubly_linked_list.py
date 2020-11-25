@@ -125,7 +125,6 @@ class DoublyLinkedList:
         >>> linked_list.delete_at_nth(1) == 3
         True
         >>> str(linked_list)
-        '2->4'
         >>> linked_list.delete_at_nth(2)
         Traceback (most recent call last):
         ....
@@ -173,14 +172,12 @@ class DoublyLinkedList:
         return data
 
     def is_empty(self):
-        """
         >>> linked_list = DoublyLinkedList()
         >>> linked_list.is_empty()
         True
         >>> linked_list.insert_at_tail(1)
         >>> linked_list.is_empty()
         False
-        """
         return len(self) == 0
 
 
