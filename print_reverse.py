@@ -30,8 +30,6 @@ def make_linked_list(elements_list: List):
     >>> make_linked_list([7, 25])
     7->25
     """
-    if not elements_list:
-        raise Exception("The Elements List is empty")
 
     current = head = Node(elements_list[0])
     for i in range(1, len(elements_list)):
