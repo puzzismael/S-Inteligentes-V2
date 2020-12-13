@@ -1,6 +1,5 @@
 class Node:
     def __init__(self, data: int) -> int:
-        int y
         self.data = data
         self.next = None
 

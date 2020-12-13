@@ -1,4 +1,4 @@
-
+from typing import List
 
 
 class Node:
@@ -9,7 +9,6 @@ class Node:
     def __repr__(self):
         """Returns a visual representation of the node and all its following nodes."""
         string_rep = []
-        int num=2
         temp = self
         while temp:
             string_rep.append(f"{temp.data}")
